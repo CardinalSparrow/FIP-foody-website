@@ -1,0 +1,146 @@
+.faq {
+  background: #f1ecec;
+  padding: 50px 0;
+}
+
+.faq-text-and-image {
+  display: flex;
+  padding: 20px 0;
+  justify-content: center;
+  align-items: center;
+  /* gap: 10px; */
+}
+
+.faq-text {
+  width: 450px;
+}
+.faq-text h1 {
+  padding: 0 20px;
+}
+
+.question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.accordion-card {
+  padding: 10px 0;
+  border: 2px solid grey;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.icon {
+  font-weight: 800;
+}
+
+.answer {
+  padding: 0 20px;
+}
+
+.newsletter {
+  display: flex;
+  justify-self: center;
+  justify-content: space-between;
+  background: #ffb501;
+  margin: 0px 220px;
+  padding: 15px 20px;
+}
+
+.newsletter input {
+  width: 400px;
+  padding-left: 10px;
+  font-size: 20px;
+}
+.email-input {
+  display: flex;
+}
+.newsletter p {
+  align-self: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: #f1ecec;
+  background: #a9031e;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .faq {
+    padding: 0px;
+    padding-top: 50px;
+  }
+  .faq-image img {
+    width: 300px;
+  }
+  .newsletter {
+    margin: 0px;
+    padding: 10px 20px;
+  }
+  .newsletter input {
+    width: 300px;
+    padding-left: 10px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 425px) {
+  .faq-text-and-image {
+    display: block;
+    position: relative;
+  }
+  .faq {
+    padding: 10px;
+    /* padding-top: 50px; */
+  }
+  .faq-image img {
+    position: absolute;
+    top: 0;
+    left: 50px;
+  }
+  .newsletter {
+    margin: 0px;
+    padding: 10px 20px;
+  }
+  .newsletter input {
+    width: 300px;
+    padding-left: 10px;
+    font-size: 20px;
+  }
+  .faq-text {
+    width: auto;
+    margin-top: 350px;
+  }
+  .newsletter {
+    display: block;
+    margin: 0px 0px;
+    padding: 10px 15px;
+  }
+
+  .newsletter input {
+    width: 300px;
+    padding-left: 10px;
+    font-size: 20px;
+  }
+  .email-input {
+    display: flex;
+  }
+}
+
+@media (max-width: 320px) {
+  .faq-image img {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 280px;
+  }
+  .accordion-card {
+    margin: 10px;
+  }
+  .email-input input {
+    width: 200px;
+  }
+}

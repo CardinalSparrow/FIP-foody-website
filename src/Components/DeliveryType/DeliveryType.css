@@ -1,0 +1,101 @@
+.delivery-type {
+  width: 200px;
+  padding: 20px 10px;
+  border: 2px solid grey;
+  text-align: center;
+  cursor: pointer;
+  margin: 20px 20px;
+  border-radius: 8px;
+  box-shadow: 1px 0.5px 5px -1px black;
+}
+
+.delivery-type:hover {
+  transform: scale(1.05);
+  transition: 0.6s;
+  border: 2px solid #a9031e;
+}
+
+.delivery-type .type {
+  color: #161616;
+  font-weight: 700;
+}
+
+.delivery-type .price {
+  color: #a9031e;
+  /* padding-top: 20px; */
+  margin: 10px 0;
+}
+
+.delivery-type .description {
+  margin: 20px 0;
+  font-weight: 600;
+}
+
+.delivery-type hr {
+  width: 90%;
+  color: #a9031e;
+  height: 3px;
+}
+
+.delivery-type .time {
+  margin-bottom: 10px;
+}
+
+.delivery-type button {
+  width: 150px;
+  height: 40px;
+  align-self: center;
+  /* display: inline-block; */
+  padding: 8px 24px;
+  font-weight: 600;
+  background: #ffb501;
+  font-size: 1rem;
+  color: #161616;
+  border-radius: 0.5rem;
+  border: 2px solid #ffb501;
+  cursor: pointer;
+}
+
+.delivery-type button:hover {
+  display: inline-block;
+  padding: 8px 24px;
+  background: #fcfcfc;
+  color: #161616;
+  border-radius: 0.5rem;
+}
+
+#root > div > div.food-delivery > div.delivery-types > div:nth-child(3) > div {
+  background: #ffb501;
+}
+
+#root
+  > div
+  > div.food-delivery
+  > div.delivery-types
+  > div:nth-child(3)
+  > div
+  > button {
+  background: #161616;
+  border: 2px solid #161616;
+  color: #fcfcfc;
+}
+#root
+  > div
+  > div.food-delivery
+  > div.delivery-types
+  > div:nth-child(3)
+  > div
+  > button:hover {
+  background: #fcfcfc;
+  color: #161616;
+}
+
+@media (max-width: 425px) {
+  .delivery-type {
+    /* width: 180px; */
+    padding: 20px 10px;
+    margin: 20px 0px;
+    border-radius: 8px;
+    box-shadow: 1px 0.5px 5px -1px black;
+  }
+}

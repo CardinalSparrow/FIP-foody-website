@@ -1,0 +1,56 @@
+.top-d {
+  background: #fcfcfc;
+  padding: 40px 0;
+}
+
+.top-d h1 {
+  text-align: center;
+}
+.top-dishes {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.dish {
+  display: flex;
+}
+
+#root > div > div.top-dishes > div > div:nth-child(1) > div > button {
+  color: #a9031e;
+  background: #fcfcfc;
+  border: 2px solid #a9031e;
+}
+#root > div > div.top-dishes > div > div:nth-child(2) > div > button {
+  color: #a9031e;
+  background: #fcfcfc;
+  border: 2px solid #a9031e;
+}
+#root > div > div.top-dishes > div > div:nth-child(3) > div > button {
+  color: #a9031e;
+  background: #fcfcfc;
+  border: 2px solid #a9031e;
+}
+
+#root > div > div.top-dishes > div > div:nth-child(1) > div > button:hover {
+  color: #fcfcfc;
+  background: #a9031e;
+  border: 2px solid #a9031e;
+}
+#root > div > div.top-dishes > div > div:nth-child(2) > div > button:hover {
+  color: #fcfcfc;
+  background: #a9031e;
+  border: 2px solid #a9031e;
+}
+#root > div > div.top-dishes > div > div:nth-child(3) > div > button:hover {
+  color: #fcfcfc;
+  background: #a9031e;
+  border: 2px solid #a9031e;
+}
+@media (max-width: 425px) {
+  .dish {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* gap: 0px; */
+  }
+}

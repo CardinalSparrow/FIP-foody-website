@@ -1,0 +1,66 @@
+.popular-dishes {
+  background: #fcfcfc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 80px;
+}
+
+.popular-dishes h1 {
+  align-self: center;
+}
+
+.popular-dish {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-top: 50px;
+}
+
+.all-button {
+  width: 150px;
+  height: 40px;
+  align-self: center;
+  /* display: inline-block; */
+  padding: 8px 24px;
+  background: #ffb501;
+  font-size: 1.2rem;
+  color: #161616;
+  border-radius: 0.5rem;
+  border: 2px solid #ffb501;
+  margin-top: 30px;
+}
+.all-button:hover {
+  display: inline-block;
+  padding: 8px 24px;
+  background: #fcfcfc;
+  color: #161616;
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .popular-dish {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0px;
+  }
+  .popular-dishes {
+    padding: 50px 30px;
+  }
+}
+@media (max-width: 425px) {
+  .popular-dish {
+    grid-template-columns: 1fr 1fr;
+    padding: 0px;
+  }
+  .popular-dishes {
+    padding: 10px 5px;
+  }
+}
+@media (max-width: 320px) {
+  .popular-dish {
+    grid-template-columns: 1fr;
+    padding: 8px;
+  }
+  /* .popular-dishes {
+    padding: 25px 30px;
+  } */
+}
